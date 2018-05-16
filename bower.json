@@ -7,13 +7,22 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "bootstrap": "^4.0.0"
+    "bootstrap": "^4.0.0",
+    "font-awesome": "^4.7.0",
+    "smooth-scroll.js": "^12.1.4",
+    "aos": "~2.2.0"
   },
     "overrides": {
     "bootstrap": {
       "main": [
         "./scss/bootstrap.scss",
         "./dist/js/bootstrap.bundle.js"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./scss/font-awesome.scss",
+        "./fonts/*"
       ]
     }
   }

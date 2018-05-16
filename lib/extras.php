@@ -2,6 +2,8 @@
 
 namespace Roots\Sage\Extras;
 
+use Roots\Sage\Setup;
+
 /**
  * Add <body> classes
  */
@@ -12,6 +14,7 @@ function body_class($classes) {
       $classes[] = basename(get_permalink());
     }
   }
+
   return $classes;
 }
 add_filter('body_class', __NAMESPACE__ . '\\body_class');
@@ -20,6 +23,6 @@ add_filter('body_class', __NAMESPACE__ . '\\body_class');
  * Clean up the_excerpt()
  */
 function excerpt_more() {
-  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'sage') . '</a>';
+  return ' &hellip; <a href="' . get_permalink() . '">' . __('Continued', 'imaga') . '</a>';
 }
 add_filter('excerpt_more', __NAMESPACE__ . '\\excerpt_more');

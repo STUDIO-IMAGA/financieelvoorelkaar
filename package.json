@@ -1,13 +1,13 @@
 {
-  "name": "odil-io/BLANCIO",
-  "theme": "Blancio",
-  "version": "0.0.5",
+  "name": "financieelvoorelkaar",
+  "theme": "Financieel Voor Elkaar",
+  "version": "0.0.0",
   "author": "Odilio Witteveen <blancio@odil.io>",
   "homepage": "https://odil.io/",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git://github.com/odil-io/BLANCIO.git"
+    "url": "git://github.com/odil-io/financieelvoorelkaar.git"
   },
   "licenses": [
     {
@@ -60,6 +60,6 @@
     "wiredep": "^4.0.0"
   },
   "dependencies": {
-    "npm": "^5.8.0"
+    "npm": "^6.0.1"
   }
 }
