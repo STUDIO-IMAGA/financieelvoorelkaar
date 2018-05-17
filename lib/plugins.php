@@ -51,6 +51,13 @@ add_action( 'after_setup_theme', function() {
         'name'               => 'WordPress Backup & Security Plugin – BlogVault',
         'slug'               => 'blogvault-real-time-backup',
       ),
+      array(
+        'name'               => 'Contact Form 7',
+        'slug'               => 'contact-form-7',
+        'required'           => true,
+        'force_activation'   => true,
+        'force_deactivation' => true,
+      ),
     );
 
     $config = array(

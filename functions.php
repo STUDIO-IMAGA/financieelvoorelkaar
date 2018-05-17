@@ -5,7 +5,7 @@ define("GOOGLE_FONTS", "Open Sans");
 
 // Define Google Maps API key
 // https://developers.google.com/maps/documentation/javascript/get-api-key
-define("GOOGLE_MAPS_API", "AIzaSyB5QTXactMQKDZThuga9XwRtr5r1TC3fTs");
+define("GOOGLE_MAPS_API", "AIzaSyA46bZO2JHlQMT5f6NyZAheOGafWD88Gm4");
 
 $files = [
   'lib/navigation.php', // Bootstrap Navigation Walker

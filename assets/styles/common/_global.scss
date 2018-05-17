@@ -1,3 +1,106 @@
 .bg-white-semi{
-  background-color: rgba($white, .6) !important;
+  background-color: rgba($white, .8) !important;
+}
+
+.intro{
+  background-position: center;
+  background-size: cover;
+  background-image: url('../images/intro-banner-groot.jpg');
+}
+
+.promotionbar{
+  @extend .py-5;
+}
+
+.breadcrumbs{
+  overflow: hidden;
+  @extend .py-md-1;
+  @extend .bg-orange;
+
+  span{
+    a{
+      display: inline-block;
+      color: $white;
+
+      &:after{
+        position: relative;
+        left: -1rem;
+        display: inline-block;
+        vertical-align: middle;
+        content:'';
+        border: solid $white;
+        border-width: 0 1px 1px 0;
+        transform: rotate(-45deg);
+        padding: 1rem;
+      }
+    }
+  }
+
+  .breadcrumb_last{
+    color: $white;
+  }
+}
+.menu{
+  @extend .list-group;
+  @extend .list-group-flush;
+
+  li{
+    padding-right: 0;
+    padding-left: 0;
+    @extend .list-group-item;
+    @extend .list-group-item-action;
+
+    &.current-menu-item > a{
+      font-weight: bold;
+    }
+  }
+}
+
+#map{
+  height:320px;
+  width:100%;
+}
+
+// Breakpoint and higher
+@include media-breakpoint-up(xs) {
+}
+@include media-breakpoint-up(sm) {
+}
+@include media-breakpoint-up(md) {
+}
+@include media-breakpoint-up(lg) {
+}
+@include media-breakpoint-up(xl) {
+}
+
+// Breakpoint and lower
+@include media-breakpoint-down(xs) {
+}
+@include media-breakpoint-down(sm) {
+  .intro{
+    background-image: url('../images/intro-banner-klein.jpg');
+  }
+  .breadcrumbs{
+    span{
+      a{
+        &:after{
+          position: relative;
+          left: -.8rem;
+          display: inline-block;
+          vertical-align: middle;
+          content:'';
+          border: solid $white;
+          border-width: 0 1px 1px 0;
+          transform: rotate(-45deg);
+          padding: .8rem;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-down(md) {
+}
+@include media-breakpoint-down(lg) {
+}
+@include media-breakpoint-down(xl) {
 }

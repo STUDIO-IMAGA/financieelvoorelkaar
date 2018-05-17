@@ -566,15 +566,25 @@ function toggler( $theme_location = 'primary_navigation' ){
 
   return $html;
 }
-function navigation( $theme_location = "primary_navigation", $container_id = "primary_navigation" ){
+/**
+ * Return a wp_nav_menu object.
+ *
+ * @since 1.0.0
+ *
+ * @param string $theme_location theme location. Defaults to 'primary_navigation'
+ * @param string $container_id navigation container ID. Defaults to 'primary_navigation'
+ * @param string $container_class navigation container class. Defaults to 'collapse navbar-collapse'
+ * @param string $menu_class navigation menu class. Defaults to 'ml-auto nav navbar-nav'
+ */
+function navigation( $theme_location = "primary_navigation", $container_id = "primary_navigation", $container_class = "collapse navbar-collapse", $menu_class = "ml-auto nav navbar-nav" ){
   return wp_nav_menu(
     array(
       'theme_location'    => $theme_location,
       'depth'             => 2,
       'container'         => 'div',
-      'container_class'   => 'collapse navbar-collapse',
+      'container_class'   => $container_class,
       'container_id'      => $container_id,
-      'menu_class'        => 'ml-auto nav navbar-nav',
+      'menu_class'        => $menu_class,
       'fallback_cb'       => 'WP_Bootstrap_Navwalker::fallback',
       'walker'            => new WP_Bootstrap_Navwalker()
     )

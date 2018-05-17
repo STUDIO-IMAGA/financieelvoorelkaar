@@ -1,14 +1,14 @@
 /* ========================================================================
- * DOM-based Routing
- * Based on http://goo.gl/EUTi53 by Paul Irish
- *
- * Only fires on body classes that match. If a body class contains a dash,
- * replace the dash with an underscore when adding it to the object below.
- *
- * .noConflict()
- * The routing is enclosed within an anonymous function so that you can
- * always reference jQuery with $, even when in .noConflict() mode.
- * ======================================================================== */
+* DOM-based Routing
+* Based on http://goo.gl/EUTi53 by Paul Irish
+*
+* Only fires on body classes that match. If a body class contains a dash,
+* replace the dash with an underscore when adding it to the object below.
+*
+* .noConflict()
+* The routing is enclosed within an anonymous function so that you can
+* always reference jQuery with $, even when in .noConflict() mode.
+* ======================================================================== */
 
 (function($) {
 
@@ -34,9 +34,57 @@
       }
     },
     // About us page, note the change from about-us to about_us.
-    'about_us': {
+    'routeplanner': {
       init: function() {
-        // JavaScript to be fired on the about us page
+
+        init();
+
+        var vestiging_address = 'Gauke Boelensstraat 120, 9203 RS Drachten';
+        var directionsService = new google.maps.DirectionsService();
+        var map;
+
+        function init() {
+          directionsDisplay = new google.maps.DirectionsRenderer();
+
+          var vestiging_latlng = new google.maps.LatLng(53.103326,6.082704);
+          var options = {
+            zoom: 16,
+            disableDefaultUI: false,
+            navigationControl: true,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+          }
+
+          map = new google.maps.Map(document.getElementById("map"), options);
+
+          var mapMarker = new google.maps.Marker({
+            position: vestiging_latlng,
+            map: map
+          });
+
+          map.setCenter(vestiging_latlng);
+          directionsDisplay.setMap(map);
+          directionsDisplay.setPanel(document.getElementById("route-directions"));
+        }
+
+        function PlanRoute() {
+          var request = {
+            origin: document.getElementById("wherefrom").value,
+            destination: vestiging_address,
+            travelMode: google.maps.DirectionsTravelMode.DRIVING
+          };
+          directionsService.route(request, function(response, status) {
+            if (status == google.maps.DirectionsStatus.OK) {
+              directionsDisplay.setDirections(response);
+            }
+          });
+        }
+
+        $(function() {
+          $('#wherefrom-submit').click(function() {
+            $('#route-directions-wrap').show();
+            PlanRoute();
+          });
+        });
       }
     }
   };

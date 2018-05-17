@@ -13,3 +13,16 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+
+.wpcf7-form{
+  span{
+    .wpcf7-form-control{
+      @extend .form-control;
+    }
+  }
+  .wpcf7-submit{
+    @extend .btn;
+    @extend .btn-primary;
+  }
+}

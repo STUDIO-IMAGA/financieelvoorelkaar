@@ -19,7 +19,10 @@ function setup() {
   // Register wp_nav_menu() menus
   // http://codex.wordpress.org/Function_Reference/register_nav_menus
   register_nav_menus([
-    'primary_navigation' => __('Primary Navigation', 'imaga')
+    'primary_navigation' => __('Primaire Navigatie', 'imaga'),
+    'footer_navigation' => __('Footer Navigatie', 'imaga'),
+    'services_navigation' => __('Diensten Navigatie', 'imaga'),
+    'contact_navigation' => __('Contact Navigatie', 'imaga'),
   ]);
 
   // Enable post thumbnails
@@ -31,6 +34,8 @@ function setup() {
 
   // Enable HTML5 markup support
   add_theme_support('html5', ['caption', 'comment-form', 'comment-list', 'gallery', 'search-form']);
+
+  remove_post_type_support( 'post', 'comments' );
 
   // Use main stylesheet for visual editor
   // To add custom styles edit /assets/styles/layouts/_tinymce.scss
