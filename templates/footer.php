@@ -5,11 +5,11 @@
   <div class="container">
     <div class="row">
 
-      <div class="col-3 ml-auto text-center">
+      <div class="col-12 col-sm-6 col-md-3 ml-auto text-center py-3">
         <img class="img-fluid" src="<?= Assets\asset_path('images/fve-agb-banner.png'); ?>" alt="Financieel Voor Elkaar is onderdeel van Arie Brien Group">
       </div>
 
-      <div class="col-3 text-center">
+      <div class="col-12 col-sm-6 col-md-3 text-center py-3">
         <img class="img-fluid" src="<?= Assets\asset_path('images/mue-banner.png'); ?>" alt="Modern Uit Elkaar, gericht op de toekomst">
       </div>
 

@@ -24,7 +24,6 @@ var OSHome       = require('os').homedir();
 var bump         = require('gulp-bump');
 var fs           = require('fs');
 var semver       = require('semver');
-var removeCode   = require('gulp-remove-code');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -320,7 +319,6 @@ gulp.task('zip', function(callback) {
   ], {
    base: '.'
   })
-  .pipe(removeCode({ production: true }))
   .pipe(loadplugins.zip( name + '.zip'))
   .pipe(gulp.dest( OSHome + '/Documents/Releases'));
 });

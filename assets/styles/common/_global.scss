@@ -60,6 +60,26 @@
   height:320px;
   width:100%;
 }
+#route-directions{
+  .adp-summary{
+    text-align: center;
+    font-size: $font-size-base * 1.2;
+  }
+  .adp-directions{
+    width: 100%;
+
+    .adp-placemark{
+      @extend .bg-gray-100;
+    }
+    .adp-substep{
+      @extend .py-2;
+      .adp-stepicon{
+        display: inline-block;
+        vertical-align: middle;
+      }
+    }
+  }
+}
 
 // Breakpoint and higher
 @include media-breakpoint-up(xs) {
@@ -75,6 +95,9 @@
 
 // Breakpoint and lower
 @include media-breakpoint-down(xs) {
+  .navbar-brand{
+    max-width:140px;
+  }
 }
 @include media-breakpoint-down(sm) {
   .intro{

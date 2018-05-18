@@ -37,13 +37,11 @@
     'routeplanner': {
       init: function() {
 
-        init();
-
         var vestiging_address = 'Gauke Boelensstraat 120, 9203 RS Drachten';
         var directionsService = new google.maps.DirectionsService();
         var map;
 
-        function init() {
+        function initilize() {
           directionsDisplay = new google.maps.DirectionsRenderer();
 
           var vestiging_latlng = new google.maps.LatLng(53.103326,6.082704);
@@ -52,7 +50,7 @@
             disableDefaultUI: false,
             navigationControl: true,
             mapTypeId: google.maps.MapTypeId.ROADMAP,
-          }
+          };
 
           map = new google.maps.Map(document.getElementById("map"), options);
 
@@ -66,23 +64,29 @@
           directionsDisplay.setPanel(document.getElementById("route-directions"));
         }
 
-        function PlanRoute() {
+        function planroute() {
           var request = {
             origin: document.getElementById("wherefrom").value,
             destination: vestiging_address,
             travelMode: google.maps.DirectionsTravelMode.DRIVING
           };
           directionsService.route(request, function(response, status) {
-            if (status == google.maps.DirectionsStatus.OK) {
+            if (status === google.maps.DirectionsStatus.OK) {
               directionsDisplay.setDirections(response);
             }
           });
         }
 
+        initilize();
+
         $(function() {
           $('#wherefrom-submit').click(function() {
-            $('#route-directions-wrap').show();
-            PlanRoute();
+            planroute();
+          });
+          $('#wherefrom').keyup(function(e) {
+            if(e.which === 13) {// Return button
+              planroute();
+            }
           });
         });
       }

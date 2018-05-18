@@ -1,7 +1,7 @@
 {
-  "name": "financieelvoorelkaar",
-  "theme": "Financieel Voor Elkaar",
-  "version": "0.0.0",
+  "name": "Financieel Voor Elkaar",
+  "theme": "financieelvoorelkaar",
+  "version": "1.0.8",
   "author": "Odilio Witteveen <blancio@odil.io>",
   "homepage": "https://odil.io/",
   "private": true,

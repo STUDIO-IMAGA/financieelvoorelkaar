@@ -39,9 +39,9 @@
 
       <?php echo Navigation\toggler('primary_navigation'); ?>
 
-      <?php echo Navigation\navigation( 'primary_navigation', 'primary_navigation', 'collapse navbar-collapse', 'ml-auto nav navbar-nav'); ?>
+      <?php echo Navigation\navigation( 'primary_navigation', 'primary_navigation', 'collapse navbar-collapse order-last', 'ml-auto nav navbar-nav'); ?>
 
-      <button class="btn btn-primary ml-3" type="button" data-toggle="collapse" data-target="#search-panel" aria-expanded="false" aria-controls="search-panel">
+      <button class="btn btn-primary ml-3 order-md-last" type="button" data-toggle="collapse" data-target="#search-panel" aria-expanded="false" aria-controls="search-panel">
         <i class="fa fa-search"></i>
       </button>
 
