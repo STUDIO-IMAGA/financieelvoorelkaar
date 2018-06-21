@@ -303,7 +303,7 @@ gulp.task('default', ['clean'], function() {
 //`gulp zip` - Zip up a distribution of the compiled WordPress theme.
 gulp.task('zip', function(callback) {
   var pkg = getPackageJSON();
-  var name = pkg.theme;
+  var name = pkg.name;
 
   return gulp.src([
     'dist/**/*',
@@ -333,7 +333,6 @@ gulp.task('version', function() {
     'Theme Name: ' + pkg.theme,
     'Theme URI: '+ pkg.homepage,
     'Version: '+ newversion,
-    'GitHub Theme URI: ' + pkg.name,
     '',
     'Author: '+ pkg.author,
     'Author URI: '+ pkg.homepage,

@@ -12,12 +12,14 @@
 
 <section>
   <div class="container">
-    <div class="row">
-      <div class="col-12 col-md-3 order-2 order-md-1 py-3">
+    <div class="row justify-content-center">
 
-        <img class="img-fluid mb-4" src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+      <?php if( has_post_thumbnail() ):?>
+        <div class="col-12 col-md-3 order-2 order-md-1 py-3">
+          <img class="img-fluid mb-4" src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
+        </div>
+      <?php endif; ?>
 
-      </div>
       <div class="col-12 col-md-9 order-1 order-md-2 py-3">
         <h1><?php the_title(); ?></h1>
         <?php the_content(); ?>
