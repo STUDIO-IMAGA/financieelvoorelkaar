@@ -28,7 +28,7 @@
     <div class="row">
 
       <div class="col-12 col-md-3 d-flex flex-column pb-3">
-        <div class="text-center pt-3">
+        <div class="text-center py-4">
           <img class="img-fluid" src="<?= Assets\asset_path('images/oranje-hypotheek.png'); ?>" alt="Hypotheek">
         </div>
         <h2>Hypotheek</h2>
@@ -37,7 +37,7 @@
       </div>
 
       <div class="col-12 col-md-3 d-flex flex-column pb-3">
-        <div class="text-center pt-3">
+        <div class="text-center py-4">
           <img class="img-fluid" src="<?= Assets\asset_path('images/oranje-pensioen.png'); ?>" alt="Pensioen">
         </div>
         <h2>Pensioen</h2>
@@ -46,7 +46,7 @@
       </div>
 
       <div class="col-12 col-md-3 d-flex flex-column pb-3">
-        <div class="text-center pt-3">
+        <div class="text-center py-4">
           <img class="img-fluid" src="<?= Assets\asset_path('images/oranje-inkomensrisico.png'); ?>" alt="Inkomensrisico">
         </div>
         <h2>Inkomensrisico</h2>
@@ -55,7 +55,7 @@
       </div>
 
       <div class="col-12 col-md-3 d-flex flex-column pb-3">
-        <div class="text-center pt-3">
+        <div class="text-center py-4">
           <img class="img-fluid" src="<?= Assets\asset_path('images/oranje-life-planning.png'); ?>" alt="Life Planning">
         </div>
         <h2>Life planning</h2>

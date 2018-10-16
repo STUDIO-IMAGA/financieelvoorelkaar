@@ -1,3 +1,17 @@
+.page-template-template-alt-home,
+.page-template-template-alt-dienst{
+  header{
+    .navbar{
+      height: 5rem;
+      margin-bottom: -5rem;
+
+      .nav-link:hover,
+      .nav-link.active{
+        border-bottom: 1px solid theme-color('primary');
+      }
+    }
+  }
+}
 @include media-breakpoint-down(xs) {
   .navbar-brand{
     width: 100%;

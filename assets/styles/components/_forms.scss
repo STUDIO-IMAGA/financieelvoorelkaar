@@ -26,3 +26,7 @@
     @extend .btn-primary;
   }
 }
+
+.form-control, .input-group .btn{
+  border-radius: 0 !important;
+}

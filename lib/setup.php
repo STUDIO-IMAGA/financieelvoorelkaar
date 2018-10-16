@@ -86,3 +86,11 @@ add_filter( 'gform_field_container', __NAMESPACE__ . '\\add_bootstrap_container_
 
 // Remove acf-post2post nag
 add_filter('remove_hube2_nag', '__return_true');
+
+/**
+ * Fire BrowserSync reload on post save
+ */
+add_action('save_post', function() {
+  $args = ['blocking' => false];
+  wp_remote_get('http://'.$_SERVER['SERVER_ADDR'].':3000/__browser_sync__?method=reload', $args);
+} );

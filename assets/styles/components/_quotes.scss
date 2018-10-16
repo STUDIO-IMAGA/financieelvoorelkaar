@@ -1,0 +1,33 @@
+.quote{
+  background-color: $white;
+  border-radius: .5rem;
+  @extend .p-4;
+
+  .quote-text{
+    font-weight: lighter;
+    @extend .pb-3;
+  }
+  .quote-author{
+    display: flex;
+    align-items: center;
+
+    .avatar{
+      margin-right: 1.5rem;
+    }
+    .author{
+      .rating{
+        color: $yellow;
+        font-size: 80%;
+      }
+      .name{
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      .company{
+        font-style: italic;
+        color: $gray-500;
+        font-size: 80%;
+      }
+    }
+  }
+}

@@ -36,20 +36,12 @@ add_action( 'after_setup_theme', function() {
         'slug'               => 'duplicate-post',
       ),
       array(
-        'name'               => 'Smush Image Compression and Optimization',
-        'slug'               => 'wp-smushit',
-      ),
-      array(
         'name'               => 'Regenerate Thumbnails',
         'slug'               => 'regenerate-thumbnails',
       ),
       array(
         'name'               => 'WP Fastest Cache',
         'slug'               => 'wp-fastest-cache',
-      ),
-      array(
-        'name'               => 'WordPress Backup & Security Plugin – BlogVault',
-        'slug'               => 'blogvault-real-time-backup',
       ),
       array(
         'name'               => 'Contact Form 7',

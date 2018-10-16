@@ -80,6 +80,9 @@
     }
   }
 }
+.img-round{
+  border-radius: 999px;
+}
 
 // Breakpoint and higher
 @include media-breakpoint-up(xs) {
