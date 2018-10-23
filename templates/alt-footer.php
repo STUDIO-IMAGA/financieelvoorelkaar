@@ -13,10 +13,6 @@
         <img class="img-fluid" src="<?= Assets\asset_path('images/mue-banner.png'); ?>" alt="Modern Uit Elkaar, gericht op de toekomst">
       </div>
 
-      <div class="col-12 col-sm-6 col-md-3 text-center">
-        <img class="img-fluid" src="<?= Assets\asset_path('images/nhg.svg'); ?>" alt="Nationale Hypotheek Garantie">
-      </div>
-
     </div>
   </div>
 </section>
