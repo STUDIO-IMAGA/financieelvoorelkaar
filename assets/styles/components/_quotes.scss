@@ -1,46 +1,49 @@
 .quotes{
   display: flex;
-  flex-flow: row wrap;
-  margin-right: -($grid-gutter-width / 2);
-  margin-left: -($grid-gutter-width / 2);
+  flex-direction: column;
 
   .quote{
     display: flex;
-    flex: 1 0 0%;
     flex-direction: column;
-    margin-right: ($grid-gutter-width / 2);
-    margin-left: ($grid-gutter-width / 2);
     background-color: $white;
     border-radius: .5rem;
     @extend .p-4;
+    @extend .mb-4;
+    @extend .mb-md-0;
 
+    .quote-author{
+      margin-bottom: .2rem;
+
+      .rating{
+        display: inline-block;
+        color: $yellow;
+        font-size: 80%;
+      }
+      .name{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-right: .5rem;
+      }
+    }
     .quote-text{
       flex: 1 1 auto;
       font-weight: lighter;
       @extend .pb-3;
     }
-    .quote-author{
-      display: flex;
-      align-items: center;
+  }
+}
 
-      .avatar{
-        margin-right: 1.5rem;
-      }
-      .author{
-        .rating{
-          color: $yellow;
-          font-size: 80%;
-        }
-        .name{
-          font-weight: bold;
-          font-size: 1rem;
-        }
-        .company{
-          font-style: italic;
-          color: $gray-500;
-          font-size: 80%;
-        }
-      }
+@include media-breakpoint-up(md) {
+  .quotes{
+    flex-flow: row wrap;
+    margin-right: -($grid-gutter-width / 2);
+    margin-left: -($grid-gutter-width / 2);
+
+    .quote{
+      flex: 1 0 0%;
+      margin-right: ($grid-gutter-width / 2);
+      margin-left: ($grid-gutter-width / 2);
     }
   }
 }

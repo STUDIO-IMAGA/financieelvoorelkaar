@@ -6,11 +6,14 @@
   <section class="bg-orange">
     <div class="container">
       <div class="row align-items-center">
-        <div class="col-6 text-center text-md-left pb-1">
-          <a class="badge badge-orange mr-3" href="tel:0512-549494"><i class="fa fa-phone"></i> 0512-549494</a>
+        <div class="col col-md-4">
+
+        </div>
+        <div class="col-12 col-md-4 text-center pb-1">
+          <a class="badge badge-orange mr-3" href="tel:0512549494"><i class="fa fa-phone"></i> (0512) 54 94 94</a>
           <a class="badge badge-purple" href="/contact/bel-mij-terug">Bel mij terug</a>
         </div>
-        <div class="col-6">
+        <div class="col-12 col-md-4">
           <div class="collapse" id="search-panel">
             <form action="/" method="get" class="form-inline justify-content-end">
               <div class="input-group">
