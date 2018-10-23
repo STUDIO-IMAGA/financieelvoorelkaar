@@ -2,12 +2,9 @@
 .page-template-template-alt-dienst{
   header{
     .navbar{
-      height: 5rem;
-      margin-bottom: -5rem;
-
       .nav-link:hover,
       .nav-link.active{
-        border-bottom: 1px solid theme-color('primary');
+        box-shadow: inset 0px -2px 0px 0px theme-color('primary');
       }
     }
   }

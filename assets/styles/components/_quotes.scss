@@ -1,32 +1,45 @@
-.quote{
-  background-color: $white;
-  border-radius: .5rem;
-  @extend .p-4;
+.quotes{
+  display: flex;
+  flex-flow: row wrap;
+  margin-right: -($grid-gutter-width / 2);
+  margin-left: -($grid-gutter-width / 2);
 
-  .quote-text{
-    font-weight: lighter;
-    @extend .pb-3;
-  }
-  .quote-author{
+  .quote{
     display: flex;
-    align-items: center;
+    flex: 1 0 0%;
+    flex-direction: column;
+    margin-right: ($grid-gutter-width / 2);
+    margin-left: ($grid-gutter-width / 2);
+    background-color: $white;
+    border-radius: .5rem;
+    @extend .p-4;
 
-    .avatar{
-      margin-right: 1.5rem;
+    .quote-text{
+      flex: 1 1 auto;
+      font-weight: lighter;
+      @extend .pb-3;
     }
-    .author{
-      .rating{
-        color: $yellow;
-        font-size: 80%;
+    .quote-author{
+      display: flex;
+      align-items: center;
+
+      .avatar{
+        margin-right: 1.5rem;
       }
-      .name{
-        font-weight: bold;
-        font-size: 1rem;
-      }
-      .company{
-        font-style: italic;
-        color: $gray-500;
-        font-size: 80%;
+      .author{
+        .rating{
+          color: $yellow;
+          font-size: 80%;
+        }
+        .name{
+          font-weight: bold;
+          font-size: 1rem;
+        }
+        .company{
+          font-style: italic;
+          color: $gray-500;
+          font-size: 80%;
+        }
       }
     }
   }

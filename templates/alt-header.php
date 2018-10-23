@@ -26,7 +26,7 @@
     </div>
   </section>
 
-  <nav class="navbar navbar-expand-lg navbar-dark">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
 
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">

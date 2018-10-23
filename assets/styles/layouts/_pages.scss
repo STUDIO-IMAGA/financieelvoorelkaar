@@ -2,15 +2,18 @@
   .promo-item{
     display: flex;
     flex-direction: column;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 
     .promo-body{
       flex: 1 1 auto;
     }
   }
 }
-
 .page-template-template-alt-dienst{
-  @extend .bg-light;
+  .wrap{
+    @extend .bg-light;
+  }
   .page-content{
     margin-top: -4rem;
     margin-bottom: -4rem;
