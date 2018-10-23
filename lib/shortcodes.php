@@ -58,3 +58,10 @@ add_shortcode( 'list-unstyled', function($atts, $content = null){
 add_shortcode( 'list-item', function($atts, $content = null){
   return '<li class="display-2">' . do_shortcode($content) . '</li>';
 });
+
+/**
+ * Bootstrap Button shortcode
+ */
+add_shortcode( 'blockquote', function($atts, $content = null){
+  return '<blockquote class="blockquote"><p><i>"' . do_shortcode($content) . '"</i></p><footer class="blockquote-footer"><cite title="'.$atts['van'].'">'.$atts['van'].'</cite></footer></blockquote>';
+});

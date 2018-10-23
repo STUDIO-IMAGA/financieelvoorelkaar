@@ -21,7 +21,7 @@ use Roots\Sage\Assets;
   <div class="container-fluid">
     <div class="row text-white">
       <div class="col-12 col-md-6 col-lg-3 py-4 bg-orange-85 promo-item pl-lg-6">
-        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/oranje-hypotheek-wit.png'); ?>"  width="32"/> Hypotheekadvies</h4>
+        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/hypotheekadvies.png'); ?>"  width="32"/> Hypotheekadvies</h4>
         <div class="promo-body">
           <p>Het kopen van een woning is vaak een droom die werkelijkheid wordt. Wij kunnen je helpen deze droom te realiseren.</p>
         </div>
@@ -30,7 +30,7 @@ use Roots\Sage\Assets;
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3 py-4 bg-orange-90 promo-item">
-        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/oranje-life-planning-wit.png'); ?>"  width="32"/> Financiële Planning</h4>
+        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/financiele-planning.png'); ?>"  width="32"/> Financiële Planning</h4>
         <div class="promo-body">
           <p>Het kopen van een woning is vaak een droom die werkelijkheid wordt. Wij kunnen je helpen deze droom te realiseren.</p>
         </div>
@@ -39,7 +39,7 @@ use Roots\Sage\Assets;
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3 py-4 bg-orange-95 promo-item">
-        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/oranje-inkomensrisico-wit.png'); ?>"  width="32"/> Verzekeringen</h4>
+        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/verzekeringen.png'); ?>"  width="32"/> Verzekeringen</h4>
         <div class="promo-body">
           <p>Samen met jou kijken wij naar het totaalplaatje van jou financiële situatie en met welke risico's je in de toekomst te maken kan hebben.</p>
           <p></p>
@@ -49,7 +49,7 @@ use Roots\Sage\Assets;
         </div>
       </div>
       <div class="col-12 col-md-6 col-lg-3 py-4 bg-orange promo-item pr-lg-6">
-        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/oranje-pensioen-wit.png'); ?>"  width="32"/> Pensioen</h4>
+        <h4><img class="img-fluid" src="<?= Assets\asset_path('images/pensioen.png'); ?>"  width="32"/> Pensioen</h4>
         <div class="promo-body">
           <p>Eerder stoppen met werken? Studiekapitaal opbouwen voor je kinderen? Wij adviseren je over de financiële planning die klopt bij jou toekomstdoelen.</p>
         </div>
@@ -67,7 +67,7 @@ use Roots\Sage\Assets;
     <div class="row justify-content-center pb-5">
       <div class="col-12 col-md-10">
         <h2 class="display-3 text-purple">Een goed hypotheekadvies is echt persoonlijk</h2>
-        <p class="lead">Niet alleen je (toekomstig) huis staat centraal, jij staat centraal en wij zorgen ervoor dat jouw nieuwe woning perfect in je financiële plaatje past. Dát is onze grote kracht. Alleen wij combineren in de regio Drachten/Heerenveen experts op Financieel, Fiscaal en Juridisch gebied. Maar niet alleen bij een hypotheekadvies. Ook tijdens de gehele looptijd van je hypotheek staan we altijd voor je klaar. Stap gerust eens bij ons binnen aan de Gauke Boelensstraat 120 in Drachten.</p>
+        <p class="lead">Niet alleen je (toekomstig) huis staat centraal, jij staat centraal en wij zorgen ervoor dat jouw nieuwe woning perfect in je financiële plaatje past. Dát is onze grote kracht. Alleen wij combineren in de regio Drachten/<wbr>Heerenveen experts op Financieel, Fiscaal en Juridisch gebied. Maar niet alleen bij een hypotheekadvies. Ook tijdens de gehele looptijd van je hypotheek staan we altijd voor je klaar. Stap gerust eens bij ons binnen aan de Gauke Boelensstraat 120 in Drachten.</p>
       </div>
     </div>
     <div class="row">
@@ -87,18 +87,20 @@ use Roots\Sage\Assets;
     <div class="row justify-content-center">
       <div class="col-12 col-md-10">
         <h2 class="display-3 text-purple">Nationale Hypotheek Garantie</h2>
-        <img class="img-fluid float-right" src="<?= Assets\asset_path('images/nhg.png'); ?>" alt="Nationale Hypotheek Garantie" width="140">
+        <img class="img-fluid img-thumbnail float-right" src="<?= Assets\asset_path('images/nhg.png'); ?>" alt="Nationale Hypotheek Garantie" width="140">
         <p class="lead">Met de Nationale Hypotheek Garantie (NHG) ben je verzekerd van een verantwoorde en betaalbare hypotheek. Afgezien daarvan beperk je met de NHG je financiële risico’s van jouw eigen koopwoning. Nu, maar ook in de toekomst. Onze adviseurs vertellen je er graag meer over.</p>
       </div>
     </div>
     <div class="row justify-content-center py-5">
       <div class="col-12 col-md-10">
         <h2 class="display-3 text-purple">Erkend hypotheek- en financieel adviseurs</h2>
-        <img class="img-fluid float-right" src="<?= Assets\asset_path('images/afm.png'); ?>" alt="Nationale Hypotheek Garantie" width="140">
+        <img class="img-fluid img-thumbnail float-right" src="<?= Assets\asset_path('images/afm.png'); ?>" alt="Nationale Hypotheek Garantie" width="140">
         <p class="lead">Jij bent bij ons in goede handen. Onze financieel adviseurs zijn officieel erkend, voldoen aan strenge opleidings- en ervaringsvereisten en beschikken over alle benodigde papieren en vergunningen. Je kunt dit zelf nalezen op onze pagina bij de <a href="https://www.afm.nl/nl-nl/professionals/registers/vergunningenregisters/financiele-dienstverleners/details?id=1B4E7AFE-643A-E311-894A-005056BE011D" target="_blank" alt="Autoriteit Financiële Markten">Autoriteit Financiële Markten</a>.</p>
       </div>
     </div>
   </div>
 </section>
 
-<? get_template_part('templates/quotes'); ?>
+<? get_template_part('templates/call-to-action');?>
+
+<? get_template_part('templates/quotes');?>

@@ -1,7 +1,7 @@
 <? use Roots\Sage\Assets; ?>
 <section class="bg-purple-75">
-  <div class="container">
-    <div class="row py-5">
+  <div class="container pt-6 pb-3">
+    <div class="row">
       <div class="col-12">
         <div class="quotes">
           <div class="quote">
@@ -39,6 +39,11 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 text-center pt-4">
+        <p class="text-white">Reviews van <a href="https://www.advieskeuze.nl/advies/9203rs/financieel-voor-elkaar" target="_blank">Advieskeuze.nl</a></p>
       </div>
     </div>
   </div>

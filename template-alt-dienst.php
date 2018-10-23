@@ -27,5 +27,8 @@ use Roots\Sage\Assets;
     </div>
   </section>
 
+  <? get_template_part('templates/call-to-action');?>
+
   <? get_template_part('templates/quotes'); ?>
+
 <?php endwhile; ?>

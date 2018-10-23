@@ -34,6 +34,12 @@
   }
 }
 
+blockquote{
+  padding: 1rem;
+  background: rgba($purple, .05);
+  border-radius: 1rem;
+}
+
 @include media-breakpoint-up(md) {
   .quotes{
     flex-flow: row wrap;
