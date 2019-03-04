@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Alt-Dienst
+ * Template Name: Dienst v2
  */
 
 use Roots\Sage\Assets;

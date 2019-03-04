@@ -18,7 +18,7 @@ use Roots\Sage\Wrapper;
 
     <?php do_action('get_header'); ?>
 
-    <?php (is_page_template('template-alt-home.php') or is_page_template('template-alt-dienst.php'))?get_template_part('templates/alt-header'):get_template_part('templates/header'); ?>
+    <?php get_template_part('templates/header'); ?>
 
     <div class="wrap" role="document">
 
@@ -36,7 +36,7 @@ use Roots\Sage\Wrapper;
 
     <?php do_action('get_footer');?>
 
-    <?php (is_page_template('template-alt-home.php') or is_page_template('template-alt-dienst.php'))?get_template_part('templates/alt-footer'):get_template_part('templates/footer'); ?>
+    <?php get_template_part('templates/footer'); ?>
 
     <?php wp_footer(); ?>
 

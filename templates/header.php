@@ -3,38 +3,37 @@
 <?php use Roots\Sage\Navigation; ?>
 
 <header role="banner" class="header">
-
-  <div class="collapse" id="search-panel">
+  <section class="bg-orange">
     <div class="container">
-      <div class="row">
-        <div class="col-12 py-3">
-          <form action="/" method="get" class="form-inline justify-content-end">
-            <div class="input-group">
-              <input class="form-control" type="text" placeholder="Zoek op de website" name="s" id="search" value="<?php the_search_query(); ?>" aria-label="Zoeken op de website">
-              <div class="input-group-append">
-                <button class="btn btn-primary" type="submit">Zoeken</button>
+      <div class="row align-items-center">
+        <div class="col col-md-4">
+
+        </div>
+        <div class="col-12 col-md-4 text-center pb-1">
+          <a class="badge badge-orange mr-3" href="tel:0512549494"><i class="fa fa-phone"></i> (0512) 54 94 94</a>
+          <a class="badge badge-purple" href="/contact/bel-mij-terug">Bel mij terug</a>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="collapse" id="search-panel">
+            <form action="/" method="get" class="form-inline justify-content-end">
+              <div class="input-group">
+                <input class="form-control" type="text" placeholder="Zoek op de website" name="s" id="search" value="<?php the_search_query(); ?>" aria-label="Zoeken op de website">
+                <div class="input-group-append">
+                  <button class="btn btn-purple" type="submit">Zoeken</button>
+                </div>
               </div>
-            </div>
-          </form>
+            </form>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center text-md-right pt-2">
-        <a class="btn btn-md btn-link text-black" href="tel:0512-549494"><i class="fa fa-phone"></i> 0512-549494</a>
-        <a class="btn btn-md btn-purple" href="/contact/bel-mij-terug">Bel mij terug</a>
-      </div>
-    </div>
-  </div>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
 
       <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
-        <img src="<?php echo Assets\asset_path("images/brand.png"); ?>" width="290" class="img-fluid" alt="<?php bloginfo('name'); ?>">
+        <img src="<?php echo Assets\asset_path("images/brand.png"); ?>" width="190" class="img-fluid" alt="<?php bloginfo('name'); ?>">
       </a>
 
       <?php echo Navigation\toggler('primary_navigation'); ?>

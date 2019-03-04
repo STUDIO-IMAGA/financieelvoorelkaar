@@ -1,29 +1,28 @@
-<?php if ( function_exists('yoast_breadcrumb') ) : ?>
-  <section class="breadcrumbs">
+<?php use Roots\Sage\Assets; ?>
+<?php while (have_posts()) : the_post(); ?>
+  <div class="jumbotron jumbotron-fluid mb-0 pt-10 pb-8" <?= (get_the_post_thumbnail_url())?'style="background-image:url('.get_the_post_thumbnail_url().');"':'';?> >
     <div class="container">
       <div class="row">
         <div class="col-12">
-            <?php yoast_breadcrumb(); ?>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="page-content">
+    <div class="container pb-6">
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 bg-white py-4 px-4 px-md-5">
+          <h1 class="display-2 text-purple mb-4"><?the_title();?></h1>
+          <?the_content();?>
         </div>
       </div>
     </div>
   </section>
-<?php endif; ?>
 
-<section>
-  <div class="container">
-    <div class="row justify-content-center">
+  <? get_template_part('templates/call-to-action');?>
 
-      <?php if( has_post_thumbnail() ):?>
-        <div class="col-12 col-md-3 order-2 order-md-1 py-3">
-          <img class="img-fluid mb-4" src="<?= get_the_post_thumbnail_url(); ?>" alt="<?php the_title(); ?>">
-        </div>
-      <?php endif; ?>
+  <? get_template_part('templates/quotes'); ?>
 
-      <div class="col-12 col-md-9 order-1 order-md-2 py-3">
-        <h1><?php the_title(); ?></h1>
-        <?php the_content(); ?>
-      </div>
-    </div>
-  </div>
-</section>
+<?php endwhile; ?>
