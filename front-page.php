@@ -7,7 +7,7 @@
         <h1 class="display-3 text-purple">Uw financiële zaken goed op orde</h1>
         <p class="lead">Een hypotheek afsluiten, uw ‘oude dag’ goed regelen of zorgen voor een gezonde financiële basis in het hier en nu: allemaal belangrijke zaken die u goed wilt regelen. Omdat u niet wakker wilt liggen van uw hypotheeklasten, of van de vraag wat er met uw inkomen gebeurt als u arbeidsongeschikt raakt. En omdat u ook na uw pensionering zorgeloos wilt leven.</p>
         <p class="lead">We kijken samen naar de huidige stand van zaken, zetten uw wensen en dromen op een rij en bepalen dan wat voor u de beste stappen zijn. Zo krijgt u een concreet, overzichtelijk en persoonlijk advies.</p>
-        <p><a class="btn btn-purple" href="#"><b>AFSPRAAK MAKEN</b><i class="fa fa-chevron-right ml-2"></i></a></p>
+        <p><a class="btn btn-purple" href="/contact"><b>AFSPRAAK MAKEN</b><i class="fa fa-chevron-right ml-2"></i></a></p>
       </div>
     </div>
   </div>
@@ -70,7 +70,7 @@
 
     <div class="row">
       <div class="col-12 col-md-6">
-        <img class="img-fluid mb-3" src="<?= Assets\asset_path("images/fve-2.jpg"); ?>"/>
+        <img class="img-fluid mb-3" src="<?= Assets\asset_path("images/fve-3.jpg"); ?>"/>
       </div>
       <div class="col-12 col-md-6">
         <h2 class="display-4 text-purple">Grip op uw financiële toekomst</h2>
