@@ -68,7 +68,7 @@
       </div>
     </div>
 
-    <div class="row">
+    <div class="row pb-3 pb-md-5">
       <div class="col-12 col-md-6">
         <img class="img-fluid mb-3" src="<?= Assets\asset_path("images/fve-3.jpg"); ?>"/>
       </div>
@@ -85,25 +85,29 @@
       </div>
     </div>
 
-  </div>
-</section>
+    <div class="row justify-content-center pb-5">
+      <div class="col-12 col-md-10">
+        <h2 class="display-3 text-purple">Energiezuiniger wonen</h2>
+        <p class="lead">Energiezuiniger wonen leidt tot lagere maandlasten. Samen zetten we de mogelijkheden op een rij en we geven u advies over de beste financieringsvorm voor uw energiebesparende maatregelen.</p>
+      </div>
+    </div>
 
-<section>
-  <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center pb-5">
       <div class="col-12 col-md-10">
         <h2 class="display-3 text-purple">Nationale Hypotheek Garantie</h2>
         <img class="img-fluid img-thumbnail float-right" src="<?= Assets\asset_path('images/nhg.png'); ?>" alt="Nationale Hypotheek Garantie" width="140">
         <p class="lead">Met de Nationale Hypotheek Garantie (NHG) ben je verzekerd van een verantwoorde en betaalbare hypotheek. Afgezien daarvan beperk je met de NHG je financiële risico’s van jouw eigen koopwoning. Nu, maar ook in de toekomst. Onze adviseurs vertellen je er graag meer over.</p>
       </div>
     </div>
-    <div class="row justify-content-center py-5">
+
+    <div class="row justify-content-center pb-5">
       <div class="col-12 col-md-10">
         <h2 class="display-3 text-purple">Erkend hypotheek- en financieel adviseurs</h2>
         <img class="img-fluid img-thumbnail float-right" src="<?= Assets\asset_path('images/afm.png'); ?>" alt="Nationale Hypotheek Garantie" width="140">
         <p class="lead">Jij bent bij ons in goede handen. Onze financieel adviseurs zijn officieel erkend, voldoen aan strenge opleidings- en ervaringsvereisten en beschikken over alle benodigde papieren en vergunningen. Je kunt dit zelf nalezen op onze pagina bij de <a href="https://www.afm.nl/nl-nl/professionals/registers/vergunningenregisters/financiele-dienstverleners/details?id=1B4E7AFE-643A-E311-894A-005056BE011D" target="_blank" alt="Autoriteit Financiële Markten">Autoriteit Financiële Markten</a>.</p>
       </div>
     </div>
+
   </div>
 </section>
 

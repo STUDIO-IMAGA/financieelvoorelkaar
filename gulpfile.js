@@ -319,7 +319,7 @@ gulp.task('zip', function(callback) {
   ], {
    base: '.'
   })
-  .pipe(loadplugins.zip( name + '-alt.zip'))
+  .pipe(loadplugins.zip( name + '.zip'))
   .pipe(gulp.dest( OSHome + '/Documents/Releases'));
 });
 
